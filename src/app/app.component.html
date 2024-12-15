@@ -1,0 +1,51 @@
+<ion-app>
+  <ion-split-pane contentId="main-content">
+    <ion-menu contentId="main-content" type="overlay">
+      <ion-content>
+        <ion-list id="inbox-list">
+          <ion-list-header>
+            <img class="ion-padding" height="50px" width="auto" src="../assets/teleconserje-icon.png" alt="">
+            Hola! Patricio
+          </ion-list-header>
+          <hr>
+          <ion-menu-toggle auto-hide="false" *ngFor="let p of appPages; let i = index">
+            <ion-item color="light" routerDirection="root" [routerLink]="[p.url]" lines="none" detail="false" routerLinkActive="selected">
+              <ion-icon color="dark" name="qr-code-outline" slot="start"></ion-icon>
+              <ion-label>{{ p.title }}</ion-label>
+            </ion-item>
+          </ion-menu-toggle>
+        </ion-list>
+
+        <ion-list id="labels-list">
+          <ion-item (click)="logOut()" lines="none">
+            <ion-icon name="log-out-outline" slot="start"></ion-icon>
+            <ion-label>Cerrar Sesión</ion-label>
+          </ion-item>
+        </ion-list>
+      </ion-content>
+
+      <ion-footer class="custom-footer">
+        <div class="footer-container">
+          <!-- Logo -->
+          <div class="footer-logo">
+            <img height="100px" width="auto" src="../assets/logo.png" alt="Logo SEP" />
+          </div>
+      
+          <!-- Texto -->
+          <p class="footer-text">
+            Vive más seguro con Teleconserje, un producto de grupo SEP.
+          </p>
+      
+          <!-- Redes Sociales -->
+          <div class="social-icons">
+            <ion-icon name="logo-facebook" class="icon facebook"></ion-icon>
+            <ion-icon name="logo-instagram" class="icon instagram"></ion-icon>
+            <ion-icon name="logo-linkedin" class="icon linkedin"></ion-icon>
+          </div>
+        </div>
+      </ion-footer>
+      
+    </ion-menu>
+    <ion-router-outlet id="main-content"></ion-router-outlet>
+  </ion-split-pane>
+</ion-app>

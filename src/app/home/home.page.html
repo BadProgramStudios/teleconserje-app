@@ -1,0 +1,63 @@
+
+<ion-content [fullscreen]="true">
+  <div class="ion-text-center">
+    <ion-buttons slot="start">
+      <ion-menu-button style="font-size: 30px; position: absolute;left: 15px;top: 14px;"></ion-menu-button>
+    </ion-buttons>
+    
+    <img style="height: 100px;position: relative;bottom:11px;" src="../../assets/teleconserje.png" alt="">
+    <!--<ion-fab vertical="top" mode="ios" horizontal="end">
+      <ion-fab-button color="dark" size="small" >
+
+        <ion-icon style="font-size: 21px;" name="business"></ion-icon>
+                </ion-fab-button>
+    </ion-fab>-->
+    <div style="height: 7px;background-color: #E2E6E8;position: relative;bottom: 25px;"></div>
+  </div>
+ 
+
+  
+
+  <div id="container">
+    <div class="segment-content ion-padding-bottom ion-padding-top">
+       <div id="qrImage">
+         <div class="d-flex-center" style="position: relative;right: 13px;">
+            <p style="writing-mode: vertical-rl; /* Orienta el texto en vertical */
+              transform: rotate(180deg); /* Asegura que esté de abajo hacia arriba */
+              text-align: center;
+              font-size: 25px;
+              font-weight: 900;
+              margin-bottom: -60px; /* Espacio entre el texto y el QR */
+              margin-right: 7px;
+              color: #777777; ">
+              MI LLAVE          
+              <ion-icon name="key-outline"></ion-icon>
+            </p>
+           <div class="d-flex-center qr-wrapper">
+             <qr-code value="1982378"
+             size="190" 
+             errorCorrectionLevel="M" />
+           </div>
+         </div>
+       </div>
+     </div>
+
+     <img style="width: 100%;" src="../../assets/divider.svg" alt="">
+     <div style="height: 10px;"></div>
+     <ion-list>
+      <ion-item lines="none">
+        <h5>Invitación</h5>
+      </ion-item>
+      <ion-item (click)="invitacion()" lines="none">
+        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path d="M7 17.9999C5.33333 17.9999 3.91667 17.4166 2.75 16.2499C1.58333 15.0833 1 13.6666 1 11.9999C1 10.3333 1.58333 8.91661 2.75 7.74994C3.91667 6.58327 5.33333 5.99994 7 5.99994C8.1 5.99994 9.10833 6.27494 10.025 6.82494C10.9417 7.37494 11.6667 8.09994 12.2 8.99994H21C21.55 8.99994 22.0208 9.19577 22.4125 9.58744C22.8042 9.97911 23 10.4499 23 10.9999V12.9999C23 13.5499 22.8042 14.0208 22.4125 14.4124C22.0208 14.8041 21.55 14.9999 21 14.9999V15.9999C21 16.5499 20.8042 17.0208 20.4125 17.4124C20.0208 17.8041 19.55 17.9999 19 17.9999H17C16.45 17.9999 15.9792 17.8041 15.5875 17.4124C15.1958 17.0208 15 16.5499 15 15.9999V14.9999H12.2C11.6667 15.8999 10.9417 16.6249 10.025 17.1749C9.10833 17.7249 8.1 17.9999 7 17.9999ZM7 15.9999C8.1 15.9999 8.98333 15.6624 9.65 14.9874C10.3167 14.3124 10.7167 13.6499 10.85 12.9999H17V15.9999H19V12.9999H21V10.9999H10.85C10.7167 10.3499 10.3167 9.68744 9.65 9.01244C8.98333 8.33744 8.1 7.99994 7 7.99994C5.9 7.99994 4.95833 8.39161 4.175 9.17494C3.39167 9.95827 3 10.8999 3 11.9999C3 13.0999 3.39167 14.0416 4.175 14.8249C4.95833 15.6083 5.9 15.9999 7 15.9999ZM7 13.9999C7.55 13.9999 8.02083 13.8041 8.4125 13.4124C8.80417 13.0208 9 12.5499 9 11.9999C9 11.4499 8.80417 10.9791 8.4125 10.5874C8.02083 10.1958 7.55 9.99994 7 9.99994C6.45 9.99994 5.97917 10.1958 5.5875 10.5874C5.19583 10.9791 5 11.4499 5 11.9999C5 12.5499 5.19583 13.0208 5.5875 13.4124C5.97917 13.8041 6.45 13.9999 7 13.9999Z" fill="#455054"/>
+          </svg>
+          &nbsp;&nbsp;
+                  <ion-label>Generar llave de invitado</ion-label>
+      </ion-item>
+      </ion-list>
+     
+     
+  </div>
+
+</ion-content>

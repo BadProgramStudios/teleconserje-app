@@ -1,0 +1,28 @@
+<ion-content [fullscreen]="true">
+
+  <div id="container">
+    <ion-list>
+      <div style="height: 50px;"></div>
+      <img src="../../assets/teleconserje.png" alt="">
+      <div style="height: 150px;"></div>
+
+      <img style="width: 100%;" src="../../assets/divider.svg" alt="">
+      <div style="height: 40px;"></div>
+
+      <div class="ion-padding">
+        <ion-item>
+          <ion-input [(ngModel)]="usuario" label="Usuario" placeholder="11.111.111-1"></ion-input>
+        </ion-item>
+        <ion-item>
+          <ion-input [(ngModel)]="pass" label="Constraseña"  placeholder="Ingresa tu contraseña"></ion-input>
+        </ion-item>
+        <div style="height: 50px;"></div>
+        <ion-button (click)="onLogin()" style="height: 50px;" mode="ios" expand="block" shape="round" color="dark">ENTRAR</ion-button>
+        <div *ngIf="errorMessage" class="error-message">
+          {{ errorMessage }}
+        </div>  
+      </div>
+      
+    </ion-list>
+  </div>
+</ion-content>

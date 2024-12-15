@@ -1,0 +1,40 @@
+ion-progress-bar::part(track) {
+    background: #c3c3c3;
+  }
+  
+  ion-progress-bar::part(progress) {
+    background: #09c567;
+  }
+  
+  ion-progress-bar::part(stream) {
+    background-image: radial-gradient(ellipse at center, #c2c2c2 0%, #6d6d6d 30%, transparent 30%);
+  }
+
+
+ 
+  
+  #qrImage{
+    padding: 10px 0px 30px 0px;
+    position: relative;
+    bottom: 0px;
+  }
+  .no-padding-element {
+    margin: -16px !important;
+  }
+  .qr-wrapper{
+    width: 250px;
+    min-height: 250px;
+    background: #979797;
+    border-radius: 50px;
+    overflow: hidden;
+  }
+  
+  .qr-placeholder{
+    width: 60px;
+  }
+  
+  .d-flex-center{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }

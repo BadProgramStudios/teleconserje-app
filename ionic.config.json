@@ -1,0 +1,7 @@
+{
+  "name": "teleconserje app",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "angular"
+}
